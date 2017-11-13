@@ -3,6 +3,7 @@
 const WebpackConf = require('./webpack.config.js');
 WebpackConf.entry = {};
 WebpackConf.devtool = 'inline-source-map';
+WebpackConf.externals.flickity = 'Flickity';
 
 module.exports = function(config) {
     config.set({
@@ -57,7 +58,7 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['spec', 'coverage', 'coveralls'],
+        reporters: ['spec', 'coverage'],
 
 
         // web server port

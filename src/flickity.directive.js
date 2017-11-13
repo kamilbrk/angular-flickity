@@ -1,5 +1,3 @@
-/* global flickity */
-
 export function FlickityDirective(
     $timeout,
     FlickityService,

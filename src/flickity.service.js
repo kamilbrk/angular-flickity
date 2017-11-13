@@ -1,4 +1,4 @@
-import flickity from 'flickity';
+import Flickity from 'flickity';
 
 export class FlickityService {
 
@@ -51,7 +51,7 @@ export class FlickityService {
             // Define the new instance
             const instance = {
                 id: id,
-                instance: new flickity(element, options),
+                instance: new Flickity(element, options),
             };
 
             // Save this instance to the array
@@ -339,7 +339,7 @@ export class FlickityService {
      */
     getByElement(element) {
         return new Promise((resolve, reject) => {
-            const instance = flickity.data(element)
+            const instance = Flickity.data(element)
 
             if (instance) {
                 // Return the instance
